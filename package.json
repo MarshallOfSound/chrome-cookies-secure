@@ -1,5 +1,5 @@
 {
-  "name": "chrome-cookies-secure",
+  "name": "@marshallofsound/chrome-cookies-secure",
   "version": "2.1.1",
   "description": "Extract encrypted Google Chrome cookies for a url on a Mac, Linux or Windows",
   "types": "index.d.ts",
@@ -30,10 +30,9 @@
   },
   "dependencies": {
     "int": "^0.2.0",
-    "request": "^2.88.0",
-    "sqlite3": "^5.0.7",
+    "sqlite3": "^5.1.6",
     "tldjs": "^1.5.1",
-    "tough-cookie": "^2.3.4"
+    "tough-cookie": "^4.1.3"
   },
   "optionalDependencies": {
     "keytar": "^7.9.0",

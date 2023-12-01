@@ -7,7 +7,6 @@
 let sqlite3 = require('sqlite3'),
 	tld = require('tldjs'),
 	tough = require('tough-cookie'),
-	request = require('request'),
 	int = require('int'),
 	url = require('url'),
 	crypto = require('crypto'),
@@ -210,18 +209,7 @@ function convertRawToHeader(cookies) {
 
 function convertRawToJar(cookies, uri) {
 
-	let jar = new request.jar();
-
-	cookies.forEach(function (cookie) {
-
-		const jarCookie = request.cookie(cookie.name + '=' + cookie.value);
-		if (jarCookie) {
-			jar.setCookie(jarCookie, uri);
-		}
-
-	});
-
-	return jar;
+	throw new Error('not supported')
 
 }
 
